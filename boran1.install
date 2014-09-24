@@ -12,8 +12,8 @@
  * @see system_install()
  */
 function boran1_install() {
-  //include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
-  //standard_install();
+  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
+  standard_install();
 
   // Don't display date and author information for "Basic page" nodes by default.
   variable_set('node_submitted_page', FALSE);
